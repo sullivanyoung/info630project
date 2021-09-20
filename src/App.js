@@ -1,9 +1,12 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 function App() {
   return (
-    <div>
-        <h1>Organic Food Store</h1>
-        <h2>Test</h2>
-    </div>
+    <Router>
+      <Navbar />
+    </Router>
   );
 }
 
