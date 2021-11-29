@@ -1,6 +1,6 @@
 import { ActionButton } from './actionButton';
 
-export const Product = ({ children, products }) => {
+export const Product = ({ children, products, currentCount, addProduct }) => {
 	return (
 		<div className="my-10">
 			<h1 className="font-bold text-4xl underline text-center my-5">
@@ -16,7 +16,11 @@ export const Product = ({ children, products }) => {
 							alt={prod.name}
 						/>
 						<h2 className="py-2">{prod.price}</h2>
-						<ActionButton productId={prod.productId} />
+						<ActionButton
+							productId={prod.productId}
+							currentCount={currentCount}
+							addProduct={addProduct}
+						/>
 					</div>
 				))}
 			</div>

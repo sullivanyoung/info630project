@@ -4,6 +4,8 @@ import { Home } from './pages/home';
 import { Switch, Route } from 'react-router-dom';
 import { ProductPage } from './pages/products';
 import { Footer } from './components/footer';
+import { Checkout } from './pages/checkout';
+import { Cart } from './pages/cart';
 
 function App() {
 	return (
@@ -20,6 +22,12 @@ function App() {
 				</Route>
 				<Route path="/products">
 					<ProductPage />
+				</Route>
+				<Route path="/checkout">
+					<Checkout />
+				</Route>
+				<Route path="/cart">
+					<Cart />
 				</Route>
 			</Switch>
 			<Footer />

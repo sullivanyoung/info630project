@@ -1,13 +1,34 @@
 import { Navbar } from '../components/navbar';
 import { Product } from '../components/product';
+import { useState } from 'react';
+import Banner from '../images/home-banner.png';
 
 export const Home = () => {
+	const [count, setCount] = useState(0);
 	return (
 		<>
-			<Navbar />
-			<h1 className="font-bold text-5xl py-10 font-mono">Exclusive Offer</h1>
-			<Product products={fruit}>Fruits</Product>
-			<Product products={frozenFood}>Frozen Foods</Product>
+			<Navbar count={count} />
+			<img
+				src={Banner}
+				alt="logo"
+				className="ml-auto mr-auto rounded-md w-3/5"
+			/>
+			<h1 className="font-bold text-5xl font-mono mt-16 ml-12">
+				Exclusive Offer
+			</h1>
+			<Product
+				products={fruit}
+				currentCount={count}
+				addProduct={setCount}
+			></Product>
+			<h1 className="font-bold text-5xl py-10 font-mono mt-16 ml-12">
+				Best Selling
+			</h1>
+			<Product
+				products={frozenFood}
+				currentCount={count}
+				addProduct={setCount}
+			></Product>
 		</>
 	);
 };
@@ -35,17 +56,17 @@ const fruit = [
 		inventory: 27,
 	},
 	{
-		itemID: '654321',
-		name: 'Test Product',
-		price: '$0.30',
-		img: 'https://www.pngall.com/wp-content/uploads/2016/04/Banana-Free-Download-PNG.png',
+		itemID: '652434321',
+		name: 'Peaches',
+		price: '$1.30',
+		img: 'https://www.gardeningknowhow.com/wp-content/uploads/2021/07/peach-with-half-and-leaves.jpg',
 		inventory: 14,
 	},
 	{
-		itemID: '872437',
-		name: 'Test Product',
+		itemID: '8743452437',
+		name: 'Grapes',
 		price: '$1.00',
-		img: 'https://www.kroger.com/product/images/xlarge/front/0000000004012',
+		img: 'https://www.kroger.com/product/images/xlarge/front/0000000004023',
 		inventory: 27,
 	},
 ];
