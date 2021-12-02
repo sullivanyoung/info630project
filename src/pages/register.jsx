@@ -23,7 +23,7 @@ export const Register = () => {
 				<div className="flex justify-center my-2">
 					<h1 className="pr-4 py-2 font-bold w-48 text-right">Password:</h1>
 					<input
-						type="text"
+						type="password"
 						id="password"
 						name="password"
 						placeholder="enter password here"
@@ -35,7 +35,7 @@ export const Register = () => {
 						Confirm Password:
 					</h1>
 					<input
-						type="text"
+						type="password"
 						id="confirmPassword"
 						name="confirmPassword"
 						placeholder="re-type password here"
