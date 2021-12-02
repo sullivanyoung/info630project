@@ -24,38 +24,22 @@ export const Account = () => {
 						</button>
 					</div>
 				</div>
-				<div className="flex my-2">
-					<div className="">
-						<h1 className="pr-4 py-2 font-bold">Expiration Date:</h1>
-
-						<input
-							type="text"
-							id="expDate"
-							name="exp date"
-							placeholder="12/22"
-							className="bg-gray-200 rounded p-2 m-2"
-						/>
-					</div>
-					<div>
-						<h1 className="pr-4 py-2 font-bold">CCV:</h1>
-						<input
-							type="text"
-							id="securityCode"
-							name="secCode"
-							placeholder="Security Code"
-							className="bg-gray-200 rounded p-2 m-2"
-						/>
+				<div className="justify-center my-2">
+					<h1 className="pr-4 py-2 font-bold">Email Address:</h1>
+					<div className="flex">
+						<h2>***********@gmail.com</h2>
+						<button className="text-gray-400 block pl-4 hover:text-blue-600">
+							Update Notification Settings
+						</button>
 					</div>
 				</div>
-				<div className="justify-center my-2 mb-10">
-					<h1 className="pr-4 py-2 font-bold">Zip Code:</h1>
-					<input
-						type="text"
-						id="zip"
-						name="zip"
-						placeholder="Zipcode"
-						className="bg-gray-200 rounded p-2"
-					/>
+				<div className="justify-center my-2">
+					<h1 className="pr-4 py-2 font-bold">Archived Orders:</h1>
+					<div className="flex">
+						<button className="bg-green-500 hover:bg-green-800 text-white font-bold py-2 px-10 rounded text-center focus:outline-none">
+							View Archived Orders
+						</button>
+					</div>
 				</div>
 			</div>
 		</>
