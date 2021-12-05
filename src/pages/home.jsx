@@ -11,8 +11,8 @@ export const Home = () => {
 			<Navbar count={count} />
 			<img
 				src={Banner}
-				alt="logo"
-				className="ml-auto mr-auto rounded-md w-3/5"
+				alt="banner"
+				className="w-full object-cover ml-auto mr-auto rounded-md"
 			/>
 			<h1 className="font-bold text-5xl font-mono mt-16 ml-12">
 				Exclusive Offer
