@@ -1,19 +1,17 @@
-import { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Logo from '../images/logo.png';
-import Cart from '../images/cart.png';
 import LocationIcon from '../images/location-icon.png';
 import { Link } from 'react-router-dom';
 
 const navigation = [
-	{ name: 'Home', href: '/home', current: true },
-	{ name: 'Products', href: '/products', current: false },
-	{ name: 'Online Order', href: '#', current: false },
-	{ name: 'Find a Store', href: '#', current: false },
+	{ name: 'Home', href: '/admin', current: true },
+	{ name: 'Inventory', href: '/inventory', current: false },
+	{ name: 'Employees', href: '#', current: false },
+	{ name: 'Budget Report', href: '#', current: false },
 ];
 
-export const Navbar = ({ count }) => {
+export const AdminNavbar = ({ count }) => {
 	return (
 		<>
 			<Disclosure as="nav" className="bg-green-500 fixed w-full">
@@ -68,56 +66,6 @@ export const Navbar = ({ count }) => {
 										name="search"
 										placeholder="Search"
 									/>
-									{/* Profile dropdown */}
-									<Menu as="div" className="flex ml-3 relative">
-										<div>
-											<Menu.Button className="flex text-sm rounded-full focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-												<span className="sr-only">Open user menu</span>
-												<img className="h-8 w-8" src={Cart} alt="cart" />
-												{count > 0 ? (
-													<h1 className="text-center pt-1 pl-2 text-lg font-bold">
-														{count}
-													</h1>
-												) : null}
-											</Menu.Button>
-										</div>
-										<Transition
-											as={Fragment}
-											enter="transition ease-out duration-100"
-											enterFrom="transform opacity-0 scale-95"
-											enterTo="transform opacity-100 scale-100"
-											leave="transition ease-in duration-75"
-											leaveFrom="transform opacity-100 scale-100"
-											leaveTo="transform opacity-0 scale-95"
-										>
-											<Menu.Items className="origin-top-right absolute right-0 mt-8 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-												<Menu.Item>
-													<a
-														href="/cart"
-														className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-													>
-														Cart
-													</a>
-												</Menu.Item>
-												<Menu.Item>
-													<a
-														href="/home"
-														className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-													>
-														Orders
-													</a>
-												</Menu.Item>
-												<Menu.Item>
-													<a
-														href="/account"
-														className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-													>
-														Account
-													</a>
-												</Menu.Item>
-											</Menu.Items>
-										</Transition>
-									</Menu>
 								</div>
 							</div>
 						</div>

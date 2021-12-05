@@ -44,7 +44,10 @@ export const Register = () => {
 				</div>
 			</div>
 			<div className="py-2">
-				<Link className="text-gray-400 block py-2 text-center hover:text-blue-600">
+				<Link
+					className="text-gray-400 block py-2 text-center hover:text-blue-600"
+					to="/signin"
+				>
 					Already have an account? Sign in
 				</Link>
 				<div className="block my-4 text-center">

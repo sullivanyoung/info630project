@@ -7,6 +7,8 @@ import { Footer } from './components/footer';
 import { Checkout } from './pages/checkout';
 import { Cart } from './pages/cart';
 import { Account } from './pages/account';
+import { SignIn } from './pages/sign-in';
+import { Admin } from './pages/admin';
 
 function App() {
 	return (
@@ -32,6 +34,12 @@ function App() {
 				</Route>
 				<Route path="/account">
 					<Account />
+				</Route>
+				<Route path="/signin">
+					<SignIn />
+				</Route>
+				<Route path="/admin">
+					<Admin />
 				</Route>
 			</Switch>
 			<Footer />
