@@ -43,7 +43,7 @@ export const Checkout = () => {
 						/>
 					</div>
 					<div>
-						<h1 className="pr-4 py-2 font-bold">CCV:</h1>
+						<h1 className="pr-4 py-2 font-bold">CVV:</h1>
 						<input
 							type="text"
 							id="securityCode"
