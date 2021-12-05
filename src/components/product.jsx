@@ -5,7 +5,7 @@ export const Product = ({ children, products, currentCount, addProduct }) => {
 		<div className="my-10">
 			<div className="flex justify-around">
 				{products.map((prod) => (
-					<div className="text-center mx-2 border-solid border-2 border-gray-100 p-4 rounded-lg">
+					<div className="text-center mx-2 p-4 rounded-lg">
 						<img
 							src={prod.img}
 							className="h-52 w-55 justify-center"
