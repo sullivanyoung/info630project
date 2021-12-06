@@ -8,8 +8,69 @@ export const Checkout = () => {
 			<h1 className="text-center font-bold text-3xl">Checkout</h1>
 			<div className="text-center my-2">
 				<h1 className="text-center font-bold text-2xl pt-20 mb-5">
+					Address:
+				</h1>
+
+				<div className="my-2">
+					<h1 className="pr-4 py-2 font-bold">Line 1:</h1>
+					<input
+						type="text"
+						id="line1"
+						name="line 1"
+						placeholder="Line 1"
+						className="bg-gray-200 rounded p-2"
+					/>
+				</div>
+				<div className="justify-center my-2">
+					<h1 className="pr-4 py-2 font-bold">Line 2:</h1>
+					<input
+						type="text"
+						id="line2"
+						name="line 2"
+						placeholder="Line 2"
+						className="bg-gray-200 rounded p-2"
+					/>
+				</div>
+
+				<div className="flex justify-center my-2">
+					<div className="">
+						<h1 className="pr-4 py-2 font-bold">City:</h1>
+
+						<input
+							type="text"
+							id="expDate"
+							name="exp date"
+							placeholder="Richmond"
+							className="bg-gray-200 rounded p-2 m-2"
+						/>
+					</div>
+					<div>
+						<h1 className="pr-4 py-2 font-bold">State:</h1>
+						<input
+							type="text"
+							id="securityCode"
+							name="secCode"
+							placeholder="State"
+							className="bg-gray-200 rounded p-2 m-2"
+						/>
+					</div>
+				</div>
+				<div className="justify-center my-2 mb-10">
+					<h1 className="pr-4 py-2 font-bold">Zip Code:</h1>
+					<input
+						type="text"
+						id="zip"
+						name="zip"
+						placeholder="Zipcode"
+						className="bg-gray-200 rounded p-2"
+					/>
+				</div>
+
+
+				<h1 className="text-center font-bold text-2xl pt-20 mb-5">
 					Enter Payment Information:
 				</h1>
+
 				<div className="my-2">
 					<h1 className="pr-4 py-2 font-bold">Name On Card:</h1>
 					<input
