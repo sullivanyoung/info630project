@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 const navigation = [
 	{ name: 'Home', href: '/home', current: true },
 	{ name: 'Products', href: '/products', current: false },
-	{ name: 'Online Order', href: '#', current: false },
-	{ name: 'Find a Store', href: '#', current: false },
+	// { name: 'Online Order', href: '#', current: false },
+	// { name: 'Find a Store', href: '#', current: false },
 ];
 
 export const Navbar = ({ count }) => {
