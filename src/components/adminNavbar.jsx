@@ -9,7 +9,7 @@ const navigation = [
 	{ name: 'Inventory', href: '/inventory', current: false },
 	{ name: 'Employees', href: '#', current: false },
 	{ name: 'Budget Report', href: '#', current: false },
-	{ name: 'Suppliers', href: '/suppliers', current: false }
+	{ name: 'Suppliers', href: '/suppliers', current: false },
 ];
 
 export const AdminNavbar = ({ count }) => {
