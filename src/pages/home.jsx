@@ -62,7 +62,7 @@ const fruit = [
 	},
 	{
 		itemID: '872437',
-		name: 'Oragnes',
+		name: 'Oranges',
 		price: '$1.00',
 		img: 'https://www.kroger.com/product/images/xlarge/front/0000000004012',
 		starRating: <StarRatingComponent name="rate1" starCount={5} value={3} />,
