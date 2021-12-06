@@ -8,7 +8,7 @@ export const ProductPage = () => {
 	return (
 		<>
 			<Navbar count={count} />
-			<h1 className="font-bold text-5xl py-10 font-mono mt-16 ml-12">Fruit</h1>
+			<h1 className="font-bold text-5xl py-10 font-mono mt-16 ml-12">Fruits</h1>
 			<Product
 				products={fruit}
 				currentCount={count}

@@ -16,7 +16,7 @@ export const Home = () => {
 				className="w-full object-cover ml-auto mr-auto rounded-md"
 			/>
 			<h1 className="font-bold text-5xl font-mono mt-16 ml-12">
-				Exclusive Offer
+				Exclusive Offers
 			</h1>
 			<Product
 				products={fruit}
