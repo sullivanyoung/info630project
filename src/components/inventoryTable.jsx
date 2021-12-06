@@ -1,4 +1,4 @@
-export const Inventory = ({ page }) => {
+export const InventoryTable = ({ page }) => {
 	return (
 		<div>
 			<table className="table-auto border-collapse border border-green-800 ml-5 my-4">
