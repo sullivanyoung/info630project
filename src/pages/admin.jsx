@@ -35,7 +35,12 @@ export const Admin = () => {
 						<BudgetReportTable />
 					</div>
 					<div className="my-4">
-						<h2 className="font-bold text-xl">Suppliers</h2>
+						<div className="flex space-x-4 justify-between w-full">
+							<h2 className="font-bold text-xl">Suppliers</h2>
+							<Link to="/suppliers">
+								<h2 className="hover:text-blue-500">More Info...</h2>
+							</Link>
+						</div>
 						<SupplierTable />
 					</div>
 				</div>

@@ -13,7 +13,7 @@ export const Employees = () => {
 						href="https://www.briandunning.com/sample-data/us-500.zip"
 						download
 					>
-						Download Time Report
+						Download Timesheet
 					</a>
 				</div>
 				<EmployeeTable />

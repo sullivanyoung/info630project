@@ -1,7 +1,7 @@
 export const BudgetReportTable = () => {
 	return (
 		<div>
-			<h1>Budget Report</h1>
+			<h1>To Be Created</h1>
 		</div>
 	);
 };

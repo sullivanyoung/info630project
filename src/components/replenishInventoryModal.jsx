@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 export const ReplenishInventory = () => {
 	const [showModal, setShowModal] = useState(false);
-
 	return (
 		<div className="relative flex flex-col justify-items-center">
 			<button
@@ -18,10 +17,7 @@ export const ReplenishInventory = () => {
 				<div>
 					{showModal ? (
 						<>
-							<div
-								className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-								onClick={() => setShowModal(false)}
-							>
+							<div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
 								<div className="relative w-auto my-6 mx-auto max-w-3xl">
 									{/*content*/}
 									<div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -42,19 +38,64 @@ export const ReplenishInventory = () => {
 										{/*body*/}
 										<div className="relative p-6 flex-auto inline-block">
 											<br />
-											<span className="md:text-center mx-auto text-gray-600 text-lg leading-relaxed">
-												<ul>
-													<li>
-														<b>City: </b>
-													</li>
-													<li>
-														<b>Year Founded: </b>{' '}
-													</li>
-													<li>
-														<b>League Titles: </b>{' '}
-													</li>
-												</ul>
-											</span>
+											<div className="w-full mx-auto text-gray-600 text-lg leading-relaxed">
+												<div>
+													<label htmlFor="item name" className="font-bold pr-4">
+														Item:
+													</label>
+													<select className="text-right">
+														<option>Apples</option>
+														<option>Bananas</option>
+														<option>Oranges</option>
+														<option>Peaches</option>
+														<option>Cantaloupe</option>
+														<option>Lasagna</option>
+														<option>Pizza</option>
+														<option>Frozen Chicken Strips</option>
+														<option>Velveta</option>
+													</select>
+												</div>
+												<div>
+													<label
+														htmlFor="item amount"
+														className="font-bold pr-4"
+													>
+														Amount:
+													</label>
+													<select className="ml-28">
+														<option>10</option>
+														<option>20</option>
+														<option>50</option>
+														<option>100</option>
+														<option>200</option>
+													</select>
+												</div>
+												<div>
+													<label
+														htmlFor="supplier name"
+														className="font-bold pr-4"
+													>
+														Supplier:
+													</label>
+													<select className="text-right">
+														<option>Good Foods</option>
+														<option>Less Good Foods</option>
+														<option>Subpar Foods</option>
+														<option>Decent Foods</option>
+													</select>
+												</div>
+												<div className="mt-4">
+													<label
+														htmlFor="order cost"
+														className="font-bold pr-4"
+													>
+														Cost:
+													</label>
+													<label className="ml-40 font-bold text-xl">
+														${Math.round(100 * Math.random())}
+													</label>
+												</div>
+											</div>
 										</div>
 										{/*footer*/}
 										<div className="flex items-center justify-between p-6 border-t border-solid border-gray-300 rounded-b">
