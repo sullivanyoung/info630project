@@ -58,7 +58,7 @@ export const EmployeeTable = ({ page }) => {
 						<td className="border border-green-800 px-4">employee</td>
 						<td className="border border-green-800 px-4">08/22/2021</td>
 						<td className="border border-green-800 px-4">32000</td>
-						<td className="border border-green-800 px-4">e2</td>
+						<td className="border border-green-800 px-4">e3</td>
 						<th className="border border-green-800 px-4 hover:text-red-600">
 							<button className="font-bold">Edit</button>
 						</th>
@@ -70,7 +70,7 @@ export const EmployeeTable = ({ page }) => {
 						<td className="border border-green-800 px-4">employee</td>
 						<td className="border border-green-800 px-4">08/30/2021</td>
 						<td className="border border-green-800 px-4">30000</td>
-						<td className="border border-green-800 px-4">e2</td>
+						<td className="border border-green-800 px-4">e3</td>
 						<th className="border border-green-800 px-4 hover:text-red-600">
 							<button className="font-bold">Edit</button>
 						</th>

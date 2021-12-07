@@ -10,3 +10,5 @@ Start Project - npm start
 Access admin page from sign in use (admin/admin) user/pw for admin page
 
 Access user page from sign in using (testusername/testpassword)
+
+A lot of this was written rather quickly, as far as reusable components, state, and props go, things would definitely need to be reworked for future use

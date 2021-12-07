@@ -11,6 +11,7 @@ import { SignIn } from './pages/sign-in';
 import { Admin } from './pages/admin';
 import { Supplier } from './pages/suppliers';
 import { Inventory } from './pages/inventory';
+import { Employees } from './pages/employees';
 
 function App() {
 	return (
@@ -48,6 +49,9 @@ function App() {
 				</Route>
 				<Route path="/inventory">
 					<Inventory />
+				</Route>
+				<Route path="/employees">
+					<Employees />
 				</Route>
 			</Switch>
 			<Footer />
