@@ -5,6 +5,7 @@ export const Tracking = () => {
 	return (
 		<>
 			<Navbar />
+			<h1 className="font-bold text-2xl py-2">Tracking</h1>
 			<div className="grid place-items-center mx-32">
 				<img
 					className="p-10"
