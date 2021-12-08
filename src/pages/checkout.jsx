@@ -1,5 +1,5 @@
-import { Button } from '../components/linkButton';
 import { Navbar } from '../components/navbar';
+import { Link } from 'react-router-dom';
 
 export const Checkout = () => {
 	return (
@@ -124,11 +124,16 @@ export const Checkout = () => {
 						className="bg-gray-200 rounded p-2"
 					/>
 				</div>
-				<Button
-					name="Confirm Purchase"
-					location="/home"
-					class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-20 rounded"
-				/>
+				<Link to="/tracking">
+					<button
+						class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-20 rounded"
+						onClick={() => {
+							alert('Thank you for your purchase');
+						}}
+					>
+						Confirm Purchase
+					</button>
+				</Link>
 			</div>
 		</>
 	);

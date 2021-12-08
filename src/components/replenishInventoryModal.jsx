@@ -2,6 +2,11 @@ import { useState } from 'react';
 
 export const ReplenishInventory = () => {
 	const [showModal, setShowModal] = useState(false);
+
+	const placeOrder = () => {
+		alert('Thank you for your order');
+		setShowModal(false);
+	};
 	return (
 		<div className="relative flex flex-col justify-items-center">
 			<button
@@ -99,7 +104,10 @@ export const ReplenishInventory = () => {
 										</div>
 										{/*footer*/}
 										<div className="flex items-center justify-between p-6 border-t border-solid border-gray-300 rounded-b">
-											<button className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">
+											<button
+												className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+												onClick={placeOrder}
+											>
 												Place Order
 											</button>
 											<button

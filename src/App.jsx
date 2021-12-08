@@ -12,6 +12,7 @@ import { Admin } from './pages/admin';
 import { Supplier } from './pages/suppliers';
 import { Inventory } from './pages/inventory';
 import { Employees } from './pages/employees';
+import { Tracking } from './pages/tracking';
 
 function App() {
 	return (
@@ -52,6 +53,9 @@ function App() {
 				</Route>
 				<Route path="/employees">
 					<Employees />
+				</Route>
+				<Route path="/tracking">
+					<Tracking />
 				</Route>
 			</Switch>
 			<Footer />
