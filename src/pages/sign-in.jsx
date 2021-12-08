@@ -58,6 +58,12 @@ export const SignIn = () => {
 						Submit
 					</Link>
 				</div>
+				<Link
+					className="text-gray-400 block py-2 text-center hover:text-blue-600"
+					to="/register"
+				>
+					Don't have an account? Register Here
+				</Link>
 			</div>
 		</form>
 	);

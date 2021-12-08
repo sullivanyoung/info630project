@@ -124,6 +124,7 @@ export const Checkout = () => {
 						className="bg-gray-200 rounded p-2"
 					/>
 				</div>
+				<h1 className="pb-5 font-bold">Cart Total: $29.25</h1>
 				<Link to="/tracking">
 					<button
 						class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-20 rounded"

@@ -11,7 +11,16 @@ export const Admin = () => {
 			<AdminNavbar />
 			<div className="m-auto w-1/2">
 				<h1 className="font-bold text-5xl ml-20">Dashboard</h1>
-				<div className="ml-24 mt-5">
+				<div className="ml-24 mt-5 pb-10">
+					<div className="my-4">
+						<div className="flex space-x-4 justify-between w-full">
+							<h2 className="font-bold text-xl">Budget Report</h2>
+							<Link to="/budgetreport">
+								<h2 className="hover:text-blue-500">More Info...</h2>
+							</Link>
+						</div>
+						<BudgetReportTable />
+					</div>
 					<div className="my-4">
 						<div className="flex space-x-4 justify-between w-full">
 							<h2 className="font-bold text-xl">Inventory</h2>
@@ -30,10 +39,7 @@ export const Admin = () => {
 						</div>
 						<EmployeeTable />
 					</div>
-					<div className="my-4">
-						<h2 className="font-bold text-xl">Budget Report</h2>
-						<BudgetReportTable />
-					</div>
+
 					<div className="my-4">
 						<div className="flex space-x-4 justify-between w-full">
 							<h2 className="font-bold text-xl">Suppliers</h2>

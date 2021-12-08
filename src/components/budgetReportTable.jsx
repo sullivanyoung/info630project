@@ -1,7 +1,13 @@
+import BudgetImage from '../images/BudgetReport.png';
+
 export const BudgetReportTable = () => {
 	return (
-		<div>
-			<h1>To Be Created</h1>
-		</div>
+		<>
+			<img
+				src={BudgetImage}
+				alt="tracking"
+				className="object-cover ml-auto mr-auto rounded-md"
+			/>
+		</>
 	);
 };
